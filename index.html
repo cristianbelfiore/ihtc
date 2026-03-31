@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IHTC 2024 Analysis</title>
+<title>IHTC 2024 – Instance Space Analysis</title>
 
 <style>
 body {
@@ -16,10 +16,18 @@ body {
 
 h1 {
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    color: #333;
 }
 
 .section {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 iframe {
@@ -41,11 +49,20 @@ iframe {
 </head>
 <body>
 
-<h1>IHTC 2024: Instance Space Analysis</h1>
+<h1>IHTC 2024 – Instance Space Analysis</h1>
 
-<p style="text-align:center;">
-This page presents the interactive Instance Space Analysis of the IHTC 2024 instances.
-</p>
+<div class="intro">
+This page provides supplementary material for the paper 
+<em>"The Integrated Healthcare Timetabling Competition 2024: Context and Analysis"</em>. 
+It presents an interactive visualization of the Instance Space Analysis (ISA) 
+conducted on the IHTC 2024 benchmark instances.
+<br><br>
+The projection of instances in the (Z1, Z2) space is obtained through dimensionality 
+reduction via PILOT, and highlights the relationship between instance characteristics 
+and algorithmic performance. The separating boundary between easy and hard instances 
+is approximated through logistic regression, allowing a clearer interpretation of 
+instance difficulty across the space.
+</div>
 
 <div class="section">
 
