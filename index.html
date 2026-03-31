@@ -30,6 +30,13 @@ h1 {
     margin-top: 50px;
 }
 
+.section-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    color: #333;
+}
+
 iframe {
     width: 100%;
     height: 700px;
@@ -53,18 +60,20 @@ iframe {
 
 <div class="intro">
 This page provides supplementary material for the paper 
-<em>"The Integrated Healthcare Timetabling Competition 2024: Context and Analysis"</em>. 
-It presents an interactive visualization of the Instance Space Analysis (ISA) 
-conducted on the IHTC 2024 benchmark instances.
-<br><br>
+<em>"The Integrated Healthcare Timetabling Competition 2024: Context and Analysis"</em>.
+</div>
+
+<div class="section">
+
+<h2>Instance Space Projection (Section 4.1)</h2>
+
+<p class="section-text">
 The projection of instances in the (Z1, Z2) space is obtained through dimensionality 
 reduction via PILOT, and highlights the relationship between instance characteristics 
 and algorithmic performance. The separating boundary between easy and hard instances 
 is approximated through logistic regression, allowing a clearer interpretation of 
 instance difficulty across the space.
-</div>
-
-<div class="section">
+</p>
 
 <iframe src="z1z2_separazione_interattivo.html"></iframe>
 
