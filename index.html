@@ -197,7 +197,8 @@ window.addEventListener("load", function() {
     setTimeout(resizeAllIframes, 1000);
 });
 </script>
-
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
@@ -247,6 +248,44 @@ patterns, the effect of weighting choices, and the role of critical resource sat
         is approximated through logistic regression, allowing a clearer interpretation of 
         instance difficulty across the space.
         </p>
+
+<div style="margin: 30px 0 35px 0;">
+
+<p class="section-text">
+The six features identified by MATILDA as most correlated with algorithm performance, together with the corresponding projection matrix, are reported in Equation (1).
+</p>
+
+<div style="text-align: center; font-size: 16px; margin: 20px 0; overflow-x: auto;">
+\[
+\begin{bmatrix}
+Z_1 \\
+Z_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+0.477 & 0.1659 \\
+0.265 & 0.391 \\
+0.6594 & -0.7546 \\
+0.1044 & 0.7173 \\
+-0.0357 & -0.4106 \\
+-0.1202 & -0.0958
+\end{bmatrix}^{\!\top}
+\begin{bmatrix}
+\text{Incompatible rooms per patient (median)} \\
+\text{Total operating theatre availability duration} \\
+\text{Total surgeon availability duration} \\
+\text{Surgery utilization ratio} \\
+\text{Weight: continuity of care} \\
+\text{Weight: nurse excessive workload}
+\end{bmatrix}
+\]
+</div>
+
+<div class="caption">
+Equation below defines the projection of the instances into the two-dimensional space. The coefficients indicate how each selected feature contributes to the construction of the coordinates \(Z_1\) and \(Z_2\).
+</div>
+
+</div>
 
         <iframe src="./z1z2_separazione_interattivo.html?v=5"></iframe>
 
